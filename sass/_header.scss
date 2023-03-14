@@ -1,14 +1,18 @@
-
 .Cabezera {
-    background: rgb(20, 189, 29);
+    background: $color-principal;
     text-align: center;
     position: sticky;
     top:0px;
     z-index: 10;
-    border-radius: 8px; }
-.logo{
-    width: 10%; }
-.navegacion{
-    background-color: rgb(20, 189, 29)!important;
-    display: flex;
-    justify-content: center; }
+    border-radius: 8px;
+    div {
+        .logo{
+            width: 10%;
+        }  
+    }
+    .navegacion{
+      background-color: $color-principal!important;
+      display: flex;
+      justify-content: center; 
+   }
+}
