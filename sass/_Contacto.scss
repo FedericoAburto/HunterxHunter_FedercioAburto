@@ -1,0 +1,29 @@
+.ContenidoPrincipal{
+    @include contenidoprincipal;
+    .contenedorContacto{
+    height: 100vh;
+    section{
+        .divformula{
+            display: flex;
+            align-items: center;
+            .formularioContacto div{
+                width: 80%;
+                margin: auto;
+                input{
+                    width: 50%;
+                    border: 1px solid rgb(158, 201, 93);
+                    border-radius: map-get($map, cinco );
+                    margin-top: map-get($map , cinco );
+                    margin-bottom:map-get($map , cinco ) ;
+                }
+                textarea{
+                    width: 50%;
+                    height: 100px;
+                    border: 1px solid rgb(158, 201, 93);
+                    border-radius: map-get($map , cinco );
+                }
+              }
+            }
+        }  
+    }
+}

@@ -1,0 +1,41 @@
+.ContenidoPrincipal{
+    @include contenidoprincipal;
+    div{
+        .titulo{
+            text-decoration-line:underline;
+            text-align: center;
+        }
+    }
+    section{
+        .Contenedor{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .Figuras{
+                background-color: white;
+                margin: map-get($map , cinco );
+                padding: 20px;
+                width: 30%;
+                border-radius: map-get($map , cinco );
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    text-align: center;
+                    height: 40px;
+                }              
+                .imgcard{
+                    width: 100%;
+                }
+                .Boton{
+                    width: 350px;
+                    background: $color-principal;
+                    color: black;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}

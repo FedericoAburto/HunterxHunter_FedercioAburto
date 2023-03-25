@@ -1,0 +1,9 @@
+.ContenidoPrincipal{ 
+    @include contenidoprincipal;
+    div{
+    .evento{
+        border: 2px solid rgb(83, 83, 83);
+        margin: map-get($map , cinco );
+    }
+  }
+}

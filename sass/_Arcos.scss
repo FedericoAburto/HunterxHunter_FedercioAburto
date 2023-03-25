@@ -1,0 +1,22 @@
+.ContenidoPrincipal{
+    @include contenidoprincipal;
+        .titulosarcos{
+            display: flex;
+            text-decoration-line: underline;
+            padding: auto;
+       }
+       .arcos{
+        padding: map-get($map, tres );
+        margin: 0px 0px 16px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgb(10, 0, 0);
+        div{
+            .resumenarcos{
+                border-radius: map-get($map, cuatro);
+                color: rgb(0, 0, 0);
+           }
+        }
+    }
+    
+}

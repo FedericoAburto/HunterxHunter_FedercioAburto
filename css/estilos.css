@@ -26,18 +26,96 @@
   padding-bottom: 3em;
   min-height: 100vh; }
 
-a {
-  color: #2e2626; }
+.imagenesIndex .titulo {
+  margin: auto;
+  display: flex;
+  width: 50%;
+  justify-content: center; }
+  .imagenesIndex .titulo p {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black; }
 
-a:hover {
-  color: black !important; }
+.imagenesIndex .ulPersonajes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px;
+  margin-top: 3px; }
+  .imagenesIndex .ulPersonajes li {
+    list-style: none;
+    font-size: 1.2em; }
+
+@media (max-width: 1100px) {
+  .ulPersonajes {
+    flex-wrap: wrap; } }
 
 .ContenidoPrincipal {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  text-align: left; }
+  text-align: left;
+  padding: 10px; }
+  .ContenidoPrincipal .titulosarcos {
+    display: flex;
+    text-decoration-line: underline;
+    padding: auto; }
+  .ContenidoPrincipal .arcos {
+    padding: 3px;
+    margin: 0px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #0a0000; }
+    .ContenidoPrincipal .arcos div .resumenarcos {
+      border-radius: 4px;
+      color: black; }
+
+.ContenidoPrincipal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: left;
+  padding: 10px; }
+  .ContenidoPrincipal .contenedorContacto {
+    height: 100vh; }
+    .ContenidoPrincipal .contenedorContacto section .divformula {
+      display: flex;
+      align-items: center; }
+      .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div {
+        width: 80%;
+        margin: auto; }
+        .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div input {
+          width: 50%;
+          border: 1px solid #9ec95d;
+          border-radius: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px; }
+        .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div textarea {
+          width: 50%;
+          height: 100px;
+          border: 1px solid #9ec95d;
+          border-radius: 5px; }
+
+.ContenidoPrincipal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: left;
+  padding: 10px; }
+  .ContenidoPrincipal div .evento {
+    border: 2px solid #535353;
+    margin: 5px; }
+
+.ContenidoPrincipal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: left;
+  padding: 10px; }
   .ContenidoPrincipal div .titulo {
     text-decoration-line: underline;
     text-align: center; }
@@ -66,96 +144,6 @@ a:hover {
         color: black;
         margin: auto; }
 
-.ContenidoPrincipal {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: left; }
-  .ContenidoPrincipal .titulosarcos {
-    display: flex;
-    text-decoration-line: underline;
-    padding: auto; }
-  .ContenidoPrincipal .arcos {
-    padding: 3px;
-    margin: 0px 0px 16px;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #0a0000; }
-    .ContenidoPrincipal .arcos div .resumenarcos {
-      border-radius: 4px;
-      color: black; }
-
-.ContenidoPrincipal {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: left; }
-  .ContenidoPrincipal .contenedorContacto {
-    height: 100vh; }
-    .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div {
-      width: 80%;
-      margin: auto; }
-      .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div input {
-        width: 50%;
-        border: 1px solid #9ec95d;
-        border-radius: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px; }
-      .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div textarea {
-        width: 50%;
-        height: 100px;
-        border: 1px solid #9ec95d;
-        border-radius: 5px; }
-
-.ContenidoPrincipal {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  text-align: left; }
-  .ContenidoPrincipal div .evento {
-    border: 2px solid #535353;
-    margin: 5px; }
-
-.Contenedor .Figuras img {
-  border: 2px solid black;
-  width: 350px;
-  margin: auto; }
-
-.ulpersonajes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.PersonajesPrincipales {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid #2e2d2d;
-  background-color: white;
-  border-radius: 7px; }
-
-a
-.pieDePaginaAdaptable {
-  background-color: #14bd1d;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-align: center;
-  padding: 1em 0;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
-  margin-top: 15px; }
-  a
-.pieDePaginaAdaptable .icono {
-    color: #0e0d0d;
-    font-size: 1.5rem;
-    margin: 5px; }
-
-/*--------- footer-------- */
 @media (max-width: 1310px) {
   .Figuras {
     width: 400px; } }
