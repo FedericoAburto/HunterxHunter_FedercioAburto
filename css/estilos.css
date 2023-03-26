@@ -82,21 +82,29 @@
     height: 100vh; }
     .ContenidoPrincipal .contenedorContacto section .divformula {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div {
-        width: 80%;
-        margin: auto; }
+        width: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin: 5px; }
         .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div input {
-          width: 50%;
+          width: 100%;
           border: 1px solid #9ec95d;
           border-radius: 5px;
           margin-top: 5px;
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          text-align: center; }
         .ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div textarea {
           width: 50%;
           height: 100px;
           border: 1px solid #9ec95d;
           border-radius: 5px; }
+
+.ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div .botonInput {
+  width: 25%; }
 
 .ContenidoPrincipal {
   background-repeat: no-repeat;
@@ -139,10 +147,35 @@
       .ContenidoPrincipal section .Contenedor .Figuras .imgcard {
         width: 100%; }
       .ContenidoPrincipal section .Contenedor .Figuras .Boton {
-        width: 350px;
+        width: 100%;
         background: #14bd1d;
         color: black;
         margin: auto; }
+
+.Piedepagina #footerBox {
+  background-color: #14bd1d;
+  width: 100vw;
+  display: block; }
+  .Piedepagina #footerBox #iconsFooter {
+    display: flex;
+    justify-content: center; }
+    .Piedepagina #footerBox #iconsFooter i {
+      font-size: 25px;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px; }
+
+.Piedepagina #helpList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: black;
+  padding: 5px 15% 0 15%;
+  margin-bottom: 0 !important; }
+  .Piedepagina #helpList .itemFooter {
+    padding: 2px; }
 
 @media (max-width: 1310px) {
   .Figuras {

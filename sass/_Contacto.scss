@@ -6,15 +6,20 @@
         .divformula{
             display: flex;
             align-items: center;
+            justify-content: center;
             .formularioContacto div{
-                width: 80%;
+                width: 700px;
                 margin: auto;
+                display: flex;
+                justify-content: center;
+                margin: 5px;
                 input{
-                    width: 50%;
+                    width: 100%;
                     border: 1px solid rgb(158, 201, 93);
                     border-radius: map-get($map, cinco );
                     margin-top: map-get($map , cinco );
                     margin-bottom:map-get($map , cinco ) ;
+                    text-align: center;
                 }
                 textarea{
                     width: 50%;
@@ -26,4 +31,8 @@
             }
         }  
     }
+}
+
+.ContenidoPrincipal .contenedorContacto section .divformula .formularioContacto div .botonInput{
+    width: 25%;
 }

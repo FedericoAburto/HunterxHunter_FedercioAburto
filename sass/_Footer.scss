@@ -1,11 +1,30 @@
-footer .Piedepagina{
-    background-color: $color-principal;
-    display: flex;
-    justify-content:space-between;
-        .icono{
-            font-size: 1.5rem;
-            padding: 4px;
+    .Piedepagina{
+        #footerBox{
+            background-color: $color-principal;
+            width: 100vw;
+            display: block;
+            #iconsFooter{
+                display: flex;
+                justify-content: center;
+                i{
+                    font-size: 25px;
+                    text-align: center;
+                    margin-left: 10px;
+                    margin-right:10px ;
+                }
+            }
+          }
+          #helpList{
+            list-style: none;
             display: flex;
-            flex-direction: column;
-        }
-}
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: black;
+            padding: 5px 15% 0 15%; 
+            margin-bottom:0 !important;
+            .itemFooter{
+                padding: 2px;
+              }
+          }
+    }
