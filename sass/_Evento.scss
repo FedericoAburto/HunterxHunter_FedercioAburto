@@ -1,9 +1,14 @@
 .ContenidoPrincipal{ 
     @include contenidoprincipal;
-    div{
-    .evento{
-        border: 2px solid rgb(83, 83, 83);
-        margin: map-get($map , cinco );
+        section{
+          .lugar{
+          display: flex;
+          justify-content: space-evenly;
+        div{ 
+          .evento{
+            border: solid 2px rgb(37, 37, 37);   
+        }
+      }
     }
   }
-}
+} 

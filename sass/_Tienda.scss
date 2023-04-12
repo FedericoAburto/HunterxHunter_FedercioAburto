@@ -11,6 +11,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            padding: 0;
             .Figuras{
                 background-color: white;
                 margin: map-get($map , cinco );
@@ -21,13 +22,29 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                transition: all .3s;
+                .imgcard{
+                    width: 100%;
+                    box-shadow:0 60px 60px
+                    -60px rgba(0, 30, 255, 0.5) ;
+                    border-radius: 4px;
+                    object-fit: cover;
+                }
+                .subImgCard{
+                    position: absolute;
+                    width: 70%;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transform: translateY(15%);
+                    transition: .3s ease;
+                    opacity: 0;
+                }
                 h3{
                     text-align: center;
                     height: 40px;
-                }              
-                .imgcard{
-                    width: 100%;
-                }
+                }             
                 .Boton{
                     width: 100%;
                     background: $color-principal;
@@ -38,4 +55,29 @@
         }
     }
 
+}
+.ContenidoPrincipal section .Contenedor .Figuras:hover{
+    transform: 
+        perspective(200px)  
+        rotateX(5deg)
+        translateY(-5%)
+        translateZ(0)  
+    ;
+}
+.ContenidoPrincipal section .Contenedor .Figuras::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,transparent 10% rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 95%));
+    opacity: 0;
+    transition: all .3s ease;
+}
+.ContenidoPrincipal section .Contenedor .Figuras:hover::before{
+    opacity: 1;
+}
+.ContenidoPrincipal section .Contenedor .Figuras:hover .subImgCard{
+    opacity: 1;
+    transform: translateY(10%);
 }

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url(animate.css);
 * {
   /*reset*/
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
   box-sizing: border-box; }
 
 .Cabezera {
@@ -27,6 +27,7 @@
   min-height: 100vh; }
 
 .imagenesIndex .titulo {
+  text-align: center;
   margin: auto;
   display: flex;
   width: 50%;
@@ -45,6 +46,13 @@
   .imagenesIndex .ulPersonajes li {
     list-style: none;
     font-size: 1.2em; }
+
+.conteiner-xxl .titulo {
+  margin: auto;
+  text-align: center; }
+
+.conteiner-xxl .ContenidoPrincipal {
+  margin-left: 5px; }
 
 @media (max-width: 1100px) {
   .ulPersonajes {
@@ -113,9 +121,11 @@
   background-position: center;
   text-align: left;
   padding: 10px; }
-  .ContenidoPrincipal div .evento {
-    border: 2px solid #535353;
-    margin: 5px; }
+  .ContenidoPrincipal section .lugar {
+    display: flex;
+    justify-content: space-evenly; }
+    .ContenidoPrincipal section .lugar div .evento {
+      border: solid 2px #252525; }
 
 .ContenidoPrincipal {
   background-repeat: no-repeat;
@@ -130,7 +140,8 @@
   .ContenidoPrincipal section .Contenedor {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0; }
     .ContenidoPrincipal section .Contenedor .Figuras {
       background-color: white;
       margin: 5px;
@@ -140,17 +151,51 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      transition: all .3s; }
+      .ContenidoPrincipal section .Contenedor .Figuras .imgcard {
+        width: 100%;
+        box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+        border-radius: 4px;
+        object-fit: cover; }
+      .ContenidoPrincipal section .Contenedor .Figuras .subImgCard {
+        position: absolute;
+        width: 70%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(15%);
+        transition: .3s ease;
+        opacity: 0; }
       .ContenidoPrincipal section .Contenedor .Figuras h3 {
         text-align: center;
         height: 40px; }
-      .ContenidoPrincipal section .Contenedor .Figuras .imgcard {
-        width: 100%; }
       .ContenidoPrincipal section .Contenedor .Figuras .Boton {
         width: 100%;
         background: #14bd1d;
         color: black;
         margin: auto; }
+
+.ContenidoPrincipal section .Contenedor .Figuras:hover {
+  transform: perspective(200px) rotateX(5deg) translateY(-5%) translateZ(0); }
+
+.ContenidoPrincipal section .Contenedor .Figuras::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10% rgba(0, 0, 0, 0.5), black);
+  opacity: 0;
+  transition: all .3s ease; }
+
+.ContenidoPrincipal section .Contenedor .Figuras:hover::before {
+  opacity: 1; }
+
+.ContenidoPrincipal section .Contenedor .Figuras:hover .subImgCard {
+  opacity: 1;
+  transform: translateY(10%); }
 
 .Piedepagina #footerBox {
   background-color: #14bd1d;
@@ -160,6 +205,7 @@
     display: flex;
     justify-content: center; }
     .Piedepagina #footerBox #iconsFooter i {
+      color: #1a1a1a;
       font-size: 25px;
       text-align: center;
       margin-left: 10px;
@@ -175,7 +221,8 @@
   padding: 5px 15% 0 15%;
   margin-bottom: 0 !important; }
   .Piedepagina #helpList .itemFooter {
-    padding: 2px; }
+    padding: 2px;
+    color: #1a1a1a; }
 
 @media (max-width: 1310px) {
   .Figuras {

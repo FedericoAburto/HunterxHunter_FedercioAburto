@@ -1,5 +1,6 @@
 .imagenesIndex{
   .titulo{
+      text-align: center;
       margin: auto;
       display: flex;
       width: 50%;
@@ -22,8 +23,19 @@
         }
     }
 }
+.conteiner-xxl{
+  .titulo{
+    margin: auto;
+    text-align: center;
+  }
+  .ContenidoPrincipal{
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 1100px) {
     .ulPersonajes {
       flex-wrap: wrap;
     }
   }
+
